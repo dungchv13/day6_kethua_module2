@@ -11,8 +11,8 @@ public class MovAblePoint extends PointClass {
         this.ySpeed = ySpeed;
     }
     public MovAblePoint(float x,float y,float xSpeed,float ySpeed){
-        this.x = x;
-        this.y = y;
+        this.setX(x);
+        this.setY(y);
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
@@ -44,10 +44,10 @@ public class MovAblePoint extends PointClass {
 
     @Override
     public String display(){
-        return "(x,y)=("+this.x+","+this.y+"), speed(xSpeed,ySpeed) = ("+xSpeed+","+ySpeed+")";
+        return "(x,y)=("+this.getX()+","+this.getY()+"), speed(xSpeed,ySpeed) = ("+xSpeed+","+ySpeed+")";
     }
     public void move(){
-        this.x += this.xSpeed;
-        this.y += this.ySpeed;
+        this.setX(this.getX()+this.xSpeed);
+        this.setY(this.getY()+this.ySpeed);
     }
 }

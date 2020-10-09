@@ -12,7 +12,6 @@ public class Triangle extends Shape {
         this.side3 = side3;
     }
     //Get Set
-
     public void setSide1(double side1) {
         this.side1 = side1;
     }
